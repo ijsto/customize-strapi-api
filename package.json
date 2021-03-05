@@ -1,27 +1,42 @@
 {
-  "name": "strapi-playground",
+  "name": "strapi-conf-blog",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Strapi Blog Starter for Strapi Conf 2021 iJS lightning talk.",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@ijsto/eslint-config": "3.0.1",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.4.0",
+    "prettier": "^1.16.4"
+  },
   "dependencies": {
+    "knex": "<0.20.0",
+    "sqlite3": "5.0.0",
     "strapi": "3.5.0",
     "strapi-admin": "3.5.0",
-    "strapi-utils": "3.5.0",
-    "strapi-plugin-content-type-builder": "3.5.0",
-    "strapi-plugin-content-manager": "3.5.0",
-    "strapi-plugin-users-permissions": "3.5.0",
-    "strapi-plugin-email": "3.5.0",
-    "strapi-plugin-upload": "3.5.0",
     "strapi-connector-bookshelf": "3.5.0",
-    "knex": "<0.20.0",
-    "sqlite3": "5.0.0"
+    "strapi-plugin-content-manager": "3.5.0",
+    "strapi-plugin-content-type-builder": "3.5.0",
+    "strapi-plugin-email": "3.5.0",
+    "strapi-plugin-graphql": "3.5.0",
+    "strapi-plugin-migrate": "^3.0.3",
+    "strapi-plugin-upload": "3.5.0",
+    "strapi-plugin-users-permissions": "3.5.0",
+    "strapi-utils": "3.5.0"
   },
   "author": {
     "name": "A Strapi developer"
