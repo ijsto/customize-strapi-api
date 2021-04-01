@@ -5,4 +5,8 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  logTrip: (trip) => {
+    console.log(`${trip.traveller.username} just took a trip to ${trip.destination}`);
+  }
+};

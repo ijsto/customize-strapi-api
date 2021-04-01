@@ -59,9 +59,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "posts": {
-      "via": "author",
-      "collection": "post"
+    "trip": {
+      "via": "traveller",
+      "model": "trip"
     }
   }
 }
