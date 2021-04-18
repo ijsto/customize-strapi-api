@@ -1,3 +1,3 @@
-# Strapi application
+# Customize Strapi API
 
-A quick description of your strapi application
+Source code for [Customizing Strapi course](https://ijs.to/c/customizing-strapi) API service.
