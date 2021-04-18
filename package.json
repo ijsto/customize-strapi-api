@@ -1,8 +1,8 @@
 {
-  "name": "strapi-conf-blog",
+  "name": "customize-strapi-api",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi Blog Starter for Strapi Conf 2021 iJS lightning talk.",
+  "description": "Customize Strapi App Course project API.",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
