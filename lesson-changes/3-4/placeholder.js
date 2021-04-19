@@ -1,0 +1,1 @@
+// Is silence still considered golden?
