@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "name": "Trip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "destination": {
+      "type": "string"
+    },
+    "traveller": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "trip"
+    },
+    "isTravellerCovidFree": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
