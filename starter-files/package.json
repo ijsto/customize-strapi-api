@@ -2,7 +2,7 @@
   "name": "customize-strapi-api",
   "private": true,
   "version": "0.1.0",
-  "description": "Customize Strapi App Course project API.",
+  "description": "[Starter files] Customize Strapi App Course project API.",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
@@ -40,7 +40,9 @@
     "strapi-utils": "3.5.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Scott Agirs Neminskis",
+    "email": "scott@ijs.to",
+    "url": "https://ijs.to/"
   },
   "strapi": {
     "uuid": "9fb80db9-f7d8-45b8-8e02-a6d335024f58"
