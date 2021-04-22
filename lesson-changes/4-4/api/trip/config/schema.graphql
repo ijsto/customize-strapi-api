@@ -1,0 +1,13 @@
+module.exports = {
+  query: `
+    customAction: String 
+  `,
+  resolver: {
+    Query: {
+      customAction: {
+        description: "Description of GraphQL Playground action",
+        resolver: "trip.customAction"
+      }
+    }
+  }
+}
