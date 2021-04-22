@@ -17,9 +17,9 @@
     "traveller": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "trip"
+      "via": "trips"
     },
-    "isTravellerCovidFree": {
+    "isCovidFree": {
       "type": "boolean"
     },
     "title": {

@@ -6,7 +6,14 @@
  */
 
 module.exports = {
-  logTrip: (trip) => {
-    console.log(`${trip.traveller.username} just took a trip to ${trip.destination}`);
+  notify: async (trip) => {
+    console.log('Service :: trip', trip.destination);
+
+    await strapi.plugins.email.services.email.send({
+      to: 'test@ijs.to',
+      toName: 'iJS Tester',
+      subject: 'A new trip was created!',
+      text: `${trip.traveller.username} just took a trip`
+    });
   }
 };

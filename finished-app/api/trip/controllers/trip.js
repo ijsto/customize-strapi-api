@@ -6,17 +6,15 @@
  */
 
 module.exports = {
-  // create: async (ctx) => {
-  //   console.log('Controllers :: create: :: ctx', ctx.request.body);
+  create: async (ctx) => {
+    const currentUser = ctx.state.user;
 
-  //   const currentUser = ctx.state.user;
+    const tripAPI = strapi.query('trip');
+    const createdTrip = await tripAPI.create({
+      ...ctx.request.body,
+      traveller: currentUser.id
+    });
 
-  //   const tripAPI = strapi.query('trip');
-  //   const createdTrip = await tripAPI.create({...ctx.request.body, traveller: currentUser.id });
-  //   console.log('Controller :: create() :: createdTrip', createdTrip);
-
-  //   strapi.services.trip.logTrip(createdTrip);
-
-  //   return createdTrip;
-  // }
+    return createdTrip;
+  }
 };

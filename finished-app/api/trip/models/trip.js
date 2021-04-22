@@ -6,11 +6,13 @@
  */
 
 module.exports = {
-  // lifecycles: {
-  //   beforeCreate(data) {
-  //     console.log('beforeCreate :: data', data);
-      
-  //     if (!data.isTravellerCovidFree) throw new Error('Mister, you are a threat to the public.');
-  //   }
-  // }
+  lifecycles: {
+    beforeCreate(trip) {
+      console.log('beforeCreate :: data', trip);
+
+      if (!trip.isCovidFree) throw new Error('Hey sir, you are a threat to the public!');
+
+      strapi.services.trip.notify(trip);
+    }
+  }
 };

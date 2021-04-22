@@ -59,9 +59,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "trip": {
+    "trips": {
       "via": "traveller",
-      "model": "trip"
+      "collection": "trip"
     }
   }
 }
